@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font: 12px/24px Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
+    \\5b8b\4f53, sans-serif;
+  color: #333;
+  background-color: whitesmoke;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.active {
+  background-color: #04aa6d;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.calendar-screen {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.rbc-calendar {
+  height: 100%;
+}
+
+/* Modal */
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999;
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  /* width: 30%; */
+  outline: none;
+  padding: 10px;
+  /* min-height: 620px; */
+  min-width: 300px;
+}
+
+Datepicker .react-datetime-picker input:focus {
+  outline: none;
+}
+
+.react-datetime-picker__wrapper {
+  border: 0px solid gray !important;
+}
+
+/* FABS */
+.fab {
+  bottom: 25px;
+  font-size: 35px;
+  position: fixed;
+  right: 25px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-style: none;
+  border: 2px dashed #04aa6d;
+  transition: all 0.3s;
+}
+.fab:hover {
+  background-color: #04aa6d;
+  border: 2px solid white;
+  font-size: 40px;
+}
+
+.fab-delete {
+  bottom: 25px;
+  font-size: 25px;
+  position: fixed;
+  left: 25px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-style: none;
+  border: 2px solid red;
+  transition: all 0.3s;
+}
+.fab-delete:hover {
+  background-color: red;
+  border: 2px solid white;
+  font-size: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
